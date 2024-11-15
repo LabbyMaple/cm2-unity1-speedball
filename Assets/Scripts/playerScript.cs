@@ -50,5 +50,10 @@ public class playerScript : MonoBehaviour
         if(other.tag == "finish"){
             Debug.Log("Finish");
         }
+
+        if(other.tag == "coin"){
+            other.gameObject.SetActive(false);
+            transform.localScale += new Vector3(0.2f, 0.2f, 0.2f);
+        }
     }
 }
